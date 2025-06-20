@@ -3,12 +3,6 @@ import { prisma } from '@/lib/prisma'
 import formidable from 'formidable'
 import fs from 'fs'
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-}
-
 export async function GET() {
   try {
     const announcements = await prisma.announcement.findMany({

@@ -6,12 +6,6 @@ import { IncomingForm } from 'formidable'
 import path from 'path'
 import fs from 'fs/promises'
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
 const uploadDir = path.join(process.cwd(), 'public/uploads/avatars');
 
 export async function POST(req: Request) {

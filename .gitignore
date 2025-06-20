@@ -35,3 +35,15 @@ var/
 
 # VSCode
 .vscode/
+.vercel
+
+# Build output
+.next/
+out/
+
+# Uploaded files
+public/uploads/
+public/datesheets/
+
+# Database files
+prisma/*.db
